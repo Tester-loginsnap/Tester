@@ -1,0 +1,41 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="login-container">
+    <h2>Login to Your Account</h2>
+    <form id="login-form">
+        <div class="input-container">
+            <label for="username">Username, email, or phone:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username, email, or phone" required>
+        </div>
+        
+        <div class="input-container">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </div>
+        
+        <div class="input-container">
+            <input type="checkbox" id="remember">
+            <label for="remember">Save login info on your device</label>
+        </div>
+        
+        <div class="forgot-password">
+            <a href="#" onclick="forgotPassword()">Forgot your password?</a>
+        </div>
+        
+        <button type="submit">LOGIN</button>
+    </form>
+</div>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
